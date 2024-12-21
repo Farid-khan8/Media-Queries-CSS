@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation Example</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        @media (orientation: landscape) {
+            .container {
+                background-color: lightgreen;
+            }
+        }
+
+        @media (orientation: portrait) {
+            .container {
+                background-color: lightcoral;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Resize the window to see the orientation change.
+    </div>
+</body>
+
+</html>
