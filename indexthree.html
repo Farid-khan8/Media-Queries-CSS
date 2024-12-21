@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: none;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .sidebar {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Visible only on larger screens.</p>
+    </div>
+    <div class="content">
+        <h1>Main Content</h1>
+        <p>This is the main content area.</p>
+    </div>
+</body>
+
+</html>
